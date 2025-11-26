@@ -9,8 +9,8 @@ const contactLinks = [
   {
     icon: MailIcon,
     label: "Email",
-    value: "lopezkristine02@gmail.com",
-    href: "mailto:lopezkristine02@gmail.com",
+    value: "karladrianlopez16@gmail.com",
+    href: "mailto:karladrianlopez16@gmail.com",
   },
   {
     icon: LinkedinIcon,
