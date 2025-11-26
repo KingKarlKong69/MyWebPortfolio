@@ -14,6 +14,7 @@ const projects = [
     tech: ["HTML", "CSS", "JS", "PHP", "Firebase", "Tailwind CSS", "Node.js", "Capacitor.js"],
     impact: "Streamlined admin tasks and improved team coordination.",
     image: "/TNPOMS_Dashboard.png",
+    url: "https://tahananngpagmamahal.capstone-two.com/login",
   },
   {
     title: "Negus Grounds Coffee Shop",
@@ -22,6 +23,7 @@ const projects = [
     tech: ["HTML", "CSS", "JS", "PHP", "MySQL"],
     impact: "Enabled online ordering and inventory management.",
     image: "/negus.png",
+    url: "https://negusgrounds-demo.example.com",
   },
   {
     title: "Silver Thatch Pensions UI/UX Redesign",
@@ -30,6 +32,7 @@ const projects = [
     tech: ["HTML", "CSS", "JS", "Tailwind CSS", "React.js"],
     impact: "Enhanced credibility and user experience.",
     image: "/Silver Thatch Pensions_Landing Page.png",
+    url: "https://silver-thatch-pensions-redesign-iux.vercel.app/",
   },
 ]
 
@@ -67,8 +70,8 @@ export function ProjectsSection() {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <div className={cn("relative overflow-hidden rounded-lg", index % 2 === 1 && "md:order-2")}>
-                  <div className="aspect-[3/2] bg-secondary">
+                <div className={cn("relative overflow-hidden rounded-lg", index % 2 === 1 && "md:order-2")}> 
+                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="block aspect-[3/2] bg-secondary">
                     <img
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
@@ -77,17 +80,17 @@ export function ProjectsSection() {
                         hoveredIndex === index && "scale-105",
                       )}
                     />
-                  </div>
-                  <div
-                    className={cn(
-                      "absolute inset-0 bg-accent/80 flex items-center justify-center opacity-0 transition-opacity duration-300",
-                      hoveredIndex === index && "opacity-100",
-                    )}
-                  >
-                    <span className="text-accent-foreground flex items-center gap-2">
-                      View Project <ExternalLinkIcon className="w-4 h-4" />
-                    </span>
-                  </div>
+                    <div
+                      className={cn(
+                        "absolute inset-0 bg-accent/80 flex items-center justify-center opacity-0 transition-opacity duration-300",
+                        hoveredIndex === index && "opacity-100",
+                      )}
+                    >
+                      <span className="text-accent-foreground flex items-center gap-2">
+                        View Project <ExternalLinkIcon className="w-4 h-4" />
+                      </span>
+                    </div>
+                  </a>
                 </div>
 
                 <div className={cn(index % 2 === 1 && "md:order-1 md:text-right")}>

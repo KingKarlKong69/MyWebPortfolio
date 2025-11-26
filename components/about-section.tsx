@@ -28,7 +28,7 @@ export function AboutSection() {
             </div>
             <div className="space-y-6">
               <p className="text-muted-foreground leading-relaxed text-pretty">
-                {`I'm Karl Lopez, a 4th year BSIT student at Bulacan State University – Bustos Campus. I've always believed technology is the most powerful force shaping our future, so I dedicated myself to mastering web development—from front-end to back-end.`}
+                {`I'm Karl Lopez, a 4th year BSIT student at Bulacan State University – Bustos Campus. I've always believed technology is the most powerful force shaping our future, so I dedicated myself to mastering web development from front-end to back-end.`}
               </p>
               <p className="text-muted-foreground leading-relaxed text-pretty">
                 My motivation is simple: I want to be part of technology's growth, work in a high-demand field, and
